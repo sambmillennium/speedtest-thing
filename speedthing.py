@@ -7,7 +7,7 @@ from time import gmtime, strftime
 
 
 log = ('log', 'a')
-command = base64.b64decode('c3BlZWR0ZXN0IC0tc2hhcmU=', None)
+command = 'speedtest --share'
 # device to connect to
 host = raw_input('enter host: ' + '\n')
 user = raw_input('enter user: ' + '\n')
