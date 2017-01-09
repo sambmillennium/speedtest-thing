@@ -1,13 +1,13 @@
 from __future__ import print_function
-import base64
 import paramiko
 from easygui import passwordbox
-from string import replace
 from time import gmtime, strftime
+import sys, os.path
 
-
-log = ('log', 'a')
+#create logfile
+log = open(os.path.join(sys.path[0],'log.txt'), 'a')
 command = 'speedtest --share'
+
 # device to connect to
 host = raw_input('enter host: ' + '\n')
 user = raw_input('enter user: ' + '\n')
@@ -15,6 +15,7 @@ pw = passwordbox('enter password: ' + '\n')
 
 
 print('running speedtest.......')
+
 
  # Create SSH connection to device and run command
 client = paramiko.SSHClient()
@@ -38,5 +39,6 @@ print(host, file=log)
 print(strftime("%Y-%m-%d %H:%M:%S", gmtime()), file=log)
 print(graphic, file=log)
 print(res + '\n' + res2 + '\n' + '\n', file=log)
-
 print('speedtest for ' + host + ' complete. To see the results navigate to the log file or follow this link: ' '\n' '\n' + graphic)
+
+
