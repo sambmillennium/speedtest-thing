@@ -11,7 +11,7 @@ paramiko https://github.com/paramiko/paramiko
 
 easygui https://github.com/robertlugg/easygui
 
-speedtest.py from sivel https://github.com/sivel/speedtest-cli
+speedtest.py from sivel installed on the remote device https://github.com/sivel/speedtest-cli
 
 
 Also You will need to ammend the path to your log file. 
