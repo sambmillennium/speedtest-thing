@@ -7,11 +7,11 @@ Run speedtest.py on remote device and save results to local logfile.
 This requires the following in order to work:
 
 
-paramiko
+paramiko https://github.com/paramiko/paramiko
 
-easygui
+easygui https://github.com/robertlugg/easygui
 
-speedtest.py from sivel
+speedtest.py from sivel https://github.com/sivel/speedtest-cli
 
 
-You will need to ammend the path to your log file. 
+Also You will need to ammend the path to your log file. 
