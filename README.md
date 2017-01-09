@@ -1,6 +1,6 @@
 # speedtest-thing
 
-Run speedtest.py on remote device and save results to a logfile in the directory this script is located.
+Run speedtest.py on remote device and save results to a logfile in the directory this script is located. The goal is to eventually implement functionality to create graphs based on repeated speedtests on the same node etc. Could be useful for central log of speedtests throughout a network.
 
 This requires the following in order to work:
 
