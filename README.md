@@ -1,8 +1,6 @@
 # speedtest-thing
 
-My first thing I did with python. Sorry if it looks ugly or doesnt work properly.
-
-Run speedtest.py on remote device and save results to local logfile.
+Run speedtest.py on remote device and save results to a logfile in the directory this script is located.
 
 This requires the following in order to work:
 
@@ -14,7 +12,7 @@ easygui https://github.com/robertlugg/easygui
 speedtest.py from sivel installed on the remote device https://github.com/sivel/speedtest-cli
 
 
-Also You will need to ammend the path to your log file. 
+ 
 
 
 ______________________________________________
@@ -43,3 +41,4 @@ Share results: http://www.speedtest.net/result/%yoururl%
 Download: 242.61 Mbit/s
 
 Upload: 231.54 Mbit/s
+
