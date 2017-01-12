@@ -5,23 +5,44 @@
 import re
 import sys, os, time
 import easygui
+import matplotlib.pyplot as plt
 
 d_results = []
 u_results = []
-
-# open logfile
+timestamp = []
+d_fin = []
+u_fin = []
+ts = []
+#open logfile
 
 print('Choose log file to parse')
 time.sleep(3)
 path = easygui.fileopenbox()
 f = open (path, 'r')
 
-# Seperate download speeds from rest of the information and add to d_results (download) or u_results (upload)
+#loop to find download speeds and append to lists for plotting
 
 for line in f:
     if line.startswith('Download'):
         d_results.append(re.findall('\d+\.\d+', line))
     elif line.startswith('Upload'):
         u_results.append(re.findall('\d+\.\d+', line))
-    break
+    elif line.startswith('2017'):
+        timestamp.append(line)
+
 f.close()
+
+#formatting for matplotlib
+for i in range(len(d_results)):
+    d_fin.append(d_results[i])
+
+for e in range(len(u_results)):
+    u_fin.append(u_results[e])
+
+for g in range (len(timestamp)):
+    ts.append(timestamp[g])
+
+#plot graph
+plt.plot(d_fin)
+plt.plot(u_fin)
+plt.show()
