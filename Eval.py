@@ -43,6 +43,8 @@ for g in range (len(timestamp)):
     ts.append(timestamp[g])
 
 #plot graph
-plt.plot(d_fin)
-plt.plot(u_fin)
-plt.show()
+graph = plt.plot(d_fin), plt.plot(u_fin)
+plt.suptitle('Speedtest', fontsize=14, fontweight='bold')
+plt.xlabel('Timestamp')
+plt.ylabel('Speed (Mbps)')
+plt.show(graph)
