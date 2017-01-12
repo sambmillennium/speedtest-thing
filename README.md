@@ -13,7 +13,7 @@ easygui https://github.com/robertlugg/easygui
 
 speedtest.py from sivel installed on the remote device https://github.com/sivel/speedtest-cli
 
-
+matplotlib: https://github.com/matplotlib/matplotlib
  
 
 
