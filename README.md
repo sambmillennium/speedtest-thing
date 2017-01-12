@@ -2,16 +2,18 @@
 
 Run speedtest.py on remote device and save results to a logfile in the directory this script is located. The goal is to eventually implement functionality to create graphs based on repeated speedtests on the same node etc (still working on this at the moment). Currently the script creates an entry with the hostname, timestamp, download and upload speed (see example log file below).
 
+eval.py currently takes the results of the log file and roughly plots these onto a graph. This is early days but will soon feature timestamps and generally be more readable for the end user etc. 
+
 This requires the following in order to work:
 
 
-paramiko https://github.com/paramiko/paramiko
+paramiko: https://github.com/paramiko/paramiko
 
-easygui https://github.com/robertlugg/easygui
+easygui: https://github.com/robertlugg/easygui
 
-speedtest.py from sivel installed on the remote device https://github.com/sivel/speedtest-cli
+speedtest.py from sivel installed on the remote device: https://github.com/sivel/speedtest-cli
 
-
+matplotlib:https://github.com/matplotlib/matplotlib
  
 
 
